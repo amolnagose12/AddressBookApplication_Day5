@@ -28,8 +28,8 @@ public class AddressBookAppController {
 	private  IAddressBookService addressBookService;
 	
 	/*RequestMapping:use to pass the URL.
-	 * return:message get call successful.
-	 */
+	* return:message get call successful.
+	*/
 	
 	@RequestMapping(value = { "/get" })
 	public ResponseEntity<ResponseDTO> getAddressBookData() {
@@ -62,10 +62,10 @@ public class AddressBookAppController {
 		ResponseDTO respDTO = new ResponseDTO("Create AddressBook Data:", addressbookData);
 		return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
 	}
-	
+		
 	/*put method is use to update the data.
 	 * by passing pinCode.
-	 */
+	*/
 	
 	@PutMapping("/update/{pinCode}")
 	public ResponseEntity<ResponseDTO> updateAddressBookData(@PathVariable("pinCode") int pinCode,
