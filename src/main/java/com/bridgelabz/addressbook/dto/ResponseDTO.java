@@ -1,7 +1,6 @@
 package com.bridgelabz.addressbook.dto;
 
 public class ResponseDTO {
-	
     private String message;
     private Object data;
 
